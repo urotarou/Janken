@@ -8,14 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var viewModel: GameViewModel
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Spacer()
+            Opponent()
+
+            Spacer()
+            Result()
+
+            Spacer()
+            You()
+
+            Spacer()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+        }
     }
 }

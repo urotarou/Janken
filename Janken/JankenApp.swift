@@ -12,6 +12,7 @@ struct JankenApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(GameViewModel())
         }
     }
 }

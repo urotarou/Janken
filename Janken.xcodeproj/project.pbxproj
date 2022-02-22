@@ -14,6 +14,12 @@
 		8676417327C5008200E2AEFC /* JankenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676417227C5008200E2AEFC /* JankenTests.swift */; };
 		8676417D27C5008200E2AEFC /* JankenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676417C27C5008200E2AEFC /* JankenUITests.swift */; };
 		8676417F27C5008200E2AEFC /* JankenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676417E27C5008200E2AEFC /* JankenUITestsLaunchTests.swift */; };
+		8676418D27C51E1E00E2AEFC /* Opponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676418C27C51E1E00E2AEFC /* Opponent.swift */; };
+		8676418F27C51EB200E2AEFC /* You.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676418E27C51EB200E2AEFC /* You.swift */; };
+		8676419127C51F1C00E2AEFC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676419027C51F1C00E2AEFC /* Result.swift */; };
+		8676419327C5204100E2AEFC /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676419227C5204100E2AEFC /* Hand.swift */; };
+		8676419827C5271E00E2AEFC /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676419727C5271E00E2AEFC /* State.swift */; };
+		8676419A27C52A2900E2AEFC /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676419927C52A2900E2AEFC /* GameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		8676417827C5008200E2AEFC /* JankenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JankenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8676417C27C5008200E2AEFC /* JankenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenUITests.swift; sourceTree = "<group>"; };
 		8676417E27C5008200E2AEFC /* JankenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JankenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8676418C27C51E1E00E2AEFC /* Opponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opponent.swift; sourceTree = "<group>"; };
+		8676418E27C51EB200E2AEFC /* You.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = You.swift; sourceTree = "<group>"; };
+		8676419027C51F1C00E2AEFC /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		8676419227C5204100E2AEFC /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		8676419727C5271E00E2AEFC /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		8676419927C52A2900E2AEFC /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +106,13 @@
 		8676416027C5008100E2AEFC /* Janken */ = {
 			isa = PBXGroup;
 			children = (
+				8676419427C526E800E2AEFC /* Value */,
+				8676418B27C51DFB00E2AEFC /* View */,
 				8676416127C5008100E2AEFC /* JankenApp.swift */,
 				8676416327C5008100E2AEFC /* ContentView.swift */,
 				8676416527C5008100E2AEFC /* Assets.xcassets */,
 				8676416727C5008100E2AEFC /* Preview Content */,
+				8676419927C52A2900E2AEFC /* GameViewModel.swift */,
 			);
 			path = Janken;
 			sourceTree = "<group>";
@@ -125,6 +140,25 @@
 				8676417E27C5008200E2AEFC /* JankenUITestsLaunchTests.swift */,
 			);
 			path = JankenUITests;
+			sourceTree = "<group>";
+		};
+		8676418B27C51DFB00E2AEFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8676418C27C51E1E00E2AEFC /* Opponent.swift */,
+				8676418E27C51EB200E2AEFC /* You.swift */,
+				8676419027C51F1C00E2AEFC /* Result.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8676419427C526E800E2AEFC /* Value */ = {
+			isa = PBXGroup;
+			children = (
+				8676419227C5204100E2AEFC /* Hand.swift */,
+				8676419727C5271E00E2AEFC /* State.swift */,
+			);
+			path = Value;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +292,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8676416427C5008100E2AEFC /* ContentView.swift in Sources */,
+				8676419127C51F1C00E2AEFC /* Result.swift in Sources */,
+				8676419327C5204100E2AEFC /* Hand.swift in Sources */,
+				8676418F27C51EB200E2AEFC /* You.swift in Sources */,
 				8676416227C5008100E2AEFC /* JankenApp.swift in Sources */,
+				8676419827C5271E00E2AEFC /* State.swift in Sources */,
+				8676419A27C52A2900E2AEFC /* GameViewModel.swift in Sources */,
+				8676418D27C51E1E00E2AEFC /* Opponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
