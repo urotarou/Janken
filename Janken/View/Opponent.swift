@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Opponent: View {
     @EnvironmentObject var viewModel: GameViewModel
-    
+
     var body: some View {
         VStack {
             Text("相手").padding()
