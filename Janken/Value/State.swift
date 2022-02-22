@@ -7,9 +7,9 @@
 
 import Foundation
 
-enum GameState: String {
-    case Init = "じゃん...けん..."
-    case Win = "勝ち!!"
-    case Lose = "負け..."
-    case Draw = "あいこ"
+enum GameState {
+    case Init
+    case Win
+    case Lose
+    case Draw
 }

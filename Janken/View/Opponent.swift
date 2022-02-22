@@ -13,7 +13,7 @@ struct Opponent: View {
     var body: some View {
         VStack {
             Text("相手").padding()
-            Text(viewModel.opponentHand.rawValue)
+            Text(viewModel.opponentHand)
                 .font(.system(size: 36))
                 .bold()
                 .padding()

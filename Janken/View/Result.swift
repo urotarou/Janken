@@ -11,7 +11,7 @@ struct Result: View {
     @EnvironmentObject var viewModel: GameViewModel
 
     var body: some View {
-        Text(viewModel.gameState.rawValue)
+        Text(viewModel.gameState)
             .font(.system(size: 48))
             .foregroundColor(.red)
             .bold()

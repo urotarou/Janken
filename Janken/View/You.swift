@@ -13,7 +13,7 @@ struct You: View {
     var body: some View {
         VStack {
             Text("あなた").padding()
-            Text(viewModel.yourHand.rawValue)
+            Text(viewModel.yourHand)
                 .font(.system(size: 36))
                 .bold()
                 .padding()

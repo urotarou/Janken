@@ -7,9 +7,9 @@
 
 import Foundation
 
-enum Hand: String {
-    case None = "うーん..."
-    case Rock = "ぐー"
-    case Sescissors = "ちょき"
-    case Paper = "ぱー"
+enum Hand: Int {
+    case None = -1
+    case Rock = 0
+    case Sescissors
+    case Paper
 }
